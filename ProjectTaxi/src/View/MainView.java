@@ -41,9 +41,9 @@ public class MainView {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JButton btnNewButton = new JButton("New button");
-		btnNewButton.setBounds(59, 135, 89, 23);
-		frame.getContentPane().add(btnNewButton);
+		JButton btnSubida = new JButton("Subida Viajero");
+		btnSubida.setBounds(59, 135, 89, 23);
+		frame.getContentPane().add(btnSubida);
 		
 		JButton btnNewButton_1 = new JButton("New button");
 		btnNewButton_1.setBounds(282, 148, 89, 23);
