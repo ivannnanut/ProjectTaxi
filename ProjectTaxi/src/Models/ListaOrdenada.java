@@ -16,10 +16,12 @@ public class ListaOrdenada<T> extends ArrayList<T> {
 		this.comparador=comparador;
 	}
 
-	
-	public ListaOrdenada(Date horaEntrada, Date horaSalida, float precioTotal) {
+
+
+	public ListaOrdenada() {
 		
 	}
+
 
 
 	public boolean aniadir(T elemento) {

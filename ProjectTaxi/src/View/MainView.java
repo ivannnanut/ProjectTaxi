@@ -12,7 +12,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-import Models.ListaOrdenada;
+import Models.*;
 
 public class MainView<Registros> {
 
@@ -104,10 +104,13 @@ public class MainView<Registros> {
 				HoraSalida = new Date();
 				DiferenciaHora(HoraEntrada, HoraSalida, TimeUnit.MINUTES);
 				PrecioTotal = ObtenerPrecio();
-				ListaOrdenada<Registros> r = new ListaOrdenada<Registros>(HoraEntrada, HoraSalida, PrecioTotal);
-				Registro.aniadir((Registros) r);
-				System.out.println(r);
+				Registro r = new Registro(HoraEntrada, HoraSalida, PrecioTotal);
+				ListaOrdenada<Registros> Lista= new ListaOrdenada<Registros>();
+				Lista.aniadir((Registros) r);
+				System.out.println(Lista);
+				
 
+				
 			}
 		});
 	}
