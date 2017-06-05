@@ -25,7 +25,7 @@ public class MainView<Registros> {
 	private Date HoraSalida;
 	private float PrecioTotal;
 	private long DiferenciaHora;
-
+	private long hola;
 	/**
 	 * Launch the application.
 	 */
